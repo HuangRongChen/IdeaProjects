@@ -1,3 +1,5 @@
+package chap005;
+
 public class Weiyi {
 
     public static void main(String[] args) {//   正数0  负数1

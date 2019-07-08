@@ -1,3 +1,5 @@
+package chap005;
+
 public class MathCalc {
     public static void main(String[] args) {
         int a = 16;//0001 0000

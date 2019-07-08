@@ -1,3 +1,5 @@
+package chap005;
+
 public class Shujuleixing {
     public static void main(String[] args) {
         int intval = 12;
