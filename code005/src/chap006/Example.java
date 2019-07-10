@@ -2,6 +2,7 @@ package chap006;
 
 import java.util.Scanner;
 
+// TODO: 2019/7/10 该功能尚未完全理解，需要重写
 public class Example {
     public static void main(String[] args) {
 
