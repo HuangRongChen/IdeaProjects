@@ -22,7 +22,7 @@ public class Example {
         names[wuliInt] = "物理";
         names[huaxueInt] = "化学";//通过索引去访问double型数组
 
-        Scanner scanner = new Scanner[System.in];
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("请问你要保存几年的成绩？");
         int yearCount = scanner.nextInt();
@@ -35,10 +35,10 @@ public class Example {
             }
         }
         System.out.println("请问你要查看第几年的成绩？");
-        int year = in.nextInt() - 1;
+        int year = scanner.nextInt() - 1;
 
         System.out.println("请问你要查看那一门科目的成绩？");
-        int kemu = in.nextInt() - 1;
+        int kemu = scanner.nextInt() - 1;
 
         System.out.println("第" + (year + 1) + "年的" + names[kemu + 1] + "成绩是： " + scores[yearCount][names.length]);
 
@@ -49,59 +49,58 @@ public class Example {
 
             int oprtId = scanner.nextInt();
 
-            int year = 0;
+            int yearTemp = 0;
             switch (oprtId) {
                 case 1:
                     System.out.println("请输入要计算第几年的最好成绩");
-                    year = scanner.nextInt();
-                    if (year <= 0 || yearCount < year) {
-                        System.out.println("非法年份" + year);
+                    yearTemp = scanner.nextInt();
+                    if (yearTemp <= 0 || yearCount < yearTemp) {
+                        System.out.println("非法年份" + yearTemp);
                         cont = false;
                         break;
                     }
 
-                    year = year - 1;
+                    yearTemp = yearTemp - 1;
                     int best0fYearScoreId = 0;
-                    for (int i = 1; i < totalScoreCount; i++) ;
-                {
-                    if (scores[year][best0fYearScoreId] < scores[year][i]) {
+                    for (int i = 1; i < totalScoreCount; i++) {
+                        if (scores[yearTemp][best0fYearScoreId] < scores[yearTemp][i]) {
                             best0fYearScoreId = i;
+                        }
                     }
-                }
-                System.out.println("第" + (year + 1) + "年成绩最好的科目为" + names[best0fYearScoreId]);
-                break;
+                    System.out.println("第" + (yearTemp + 1) + "年成绩最好的科目为" + names[best0fYearScoreId]);
+                    break;
 
                 case 2:
                     System.out.println("请输入要计算第几年的平均成绩");
-                    year = scanner.nextInt();
-                    if (year <= 0 || yearCount < year) {
-                        System.out.println("非法年份" + year);
+                    yearTemp = scanner.nextInt();
+                    if (yearTemp <= 0 || yearCount < yearTemp) {
+                        System.out.println("非法年份" + yearTemp);
                         cont = false;
                         break;
                     }
 
-                    year =year -1;
+                    yearTemp = yearTemp - 1;
                     double totalCountForAvg = 0;
-                    for (int i = 0; i < totalScoreCount; i++){
-                        totalScoreCount +=scores[year][i];
+                    for (int i = 0; i < totalScoreCount; i++) {
+                        totalScoreCount += scores[yearTemp][i];
                     }
                     double avg0fYear = totalCountForAvg / totalScoreCount;
-                    System.out.println("第" + (year + 1) +"年的平均成绩为" + avg0fYear + ".");
+                    System.out.println("第" + (yearTemp + 1) + "年的平均成绩为" + avg0fYear + ".");
                     break;
 
                 case 3:
                     int bestYear = 0;
                     int bestScore = 0;
 
-                    for (int i =0; i <yearCount; i++){
-                        for (int j = 0; j < totalScoreCount; j++){
-                            if (scores[bestYear][bestScore] < scores[i][j]){
+                    for (int i = 0; i < yearCount; i++) {
+                        for (int j = 0; j < totalScoreCount; j++) {
+                            if (scores[bestYear][bestScore] < scores[i][j]) {
                                 bestYear = i;
                                 bestScore = j;
                             }
                         }
                     }
-                    System.out.println("所有你年度最好成绩为第" + (year + 1) + "年的" + names[bestScore]);
+                    System.out.println("所有你年度最好成绩为第" + (yearTemp + 1) + "年的" + names[bestScore]);
                     break;
 
                 case 4:
