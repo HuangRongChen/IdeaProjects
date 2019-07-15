@@ -1,6 +1,7 @@
-package zhuanzhang;
+package Exercise.Transfer;
 
 public class People {
+
     // 姓名
     private String name;
     // 金额
@@ -26,5 +27,4 @@ public class People {
     public void setBalance(double balance) {
         this.balance = balance;
     }
-
 }

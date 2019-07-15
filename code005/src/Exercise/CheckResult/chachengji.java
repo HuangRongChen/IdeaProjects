@@ -1,9 +1,9 @@
-package chap006;
+package Exercise.CheckResult;
 
 import java.util.Scanner;
 
 // TODO: 2019/7/10 该功能尚未完全理解，需要重写
-public class chengji {
+public class chachengji {
     public static void main(String[] args) {
 
         int yuwenInt = 0;
@@ -111,4 +111,3 @@ public class chengji {
         }
     }
 }
-

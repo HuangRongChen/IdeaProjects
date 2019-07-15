@@ -1,10 +1,6 @@
-package zhuanzhang;
+package Exercise.Transfer;
 
-/**
- * 钱包工具
- */
 public class MoneyTool {
-
     /**
      * 发起转账
      *
@@ -25,5 +21,4 @@ public class MoneyTool {
         // 2、收款人余额增加
         to.setBalance(to.getBalance() + amount);
     }
-
 }
