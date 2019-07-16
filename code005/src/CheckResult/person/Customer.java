@@ -1,4 +1,4 @@
-package Exercise.geekbang.persan.person;
+package CheckResult.person;
 
 public class Customer {
     public String name;

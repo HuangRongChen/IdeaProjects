@@ -1,4 +1,4 @@
-package Exercise.Transfer;
+package CheckResult.Transfer;
 
 public class MoneyTool {
     public static void send(People from, People to, double amount) {

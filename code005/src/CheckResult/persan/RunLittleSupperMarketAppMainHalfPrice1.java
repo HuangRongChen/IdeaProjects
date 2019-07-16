@@ -1,7 +1,7 @@
-package Exercise.geekbang.persan;
+package CheckResult.persan;
 
-import Exercise.geekbang.persan.supermarket.LittleSuperMarket;
-import Exercise.geekbang.persan.supermarket.Merchandise;
+import CheckResult.supermarket.LittleSuperMarket;
+import CheckResult.supermarket.Merchandise;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Exercise.geekbang.persan.supermarket;
+package CheckResult.supermarket;
 
 public class LittleSuperMarket {
     public String superMarketName;

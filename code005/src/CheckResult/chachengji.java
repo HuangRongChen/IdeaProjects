@@ -1,4 +1,4 @@
-package Exercise.CheckResult;
+package CheckResult;
 
 import java.util.Scanner;
 

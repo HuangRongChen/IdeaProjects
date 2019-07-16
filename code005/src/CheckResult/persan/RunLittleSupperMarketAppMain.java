@@ -1,8 +1,8 @@
-package Exercise.geekbang.persan;
+package CheckResult.persan;
 
-import Exercise.geekbang.persan.person.Customer;
-import Exercise.geekbang.persan.supermarket.LittleSuperMarket;
-import Exercise.geekbang.persan.supermarket.Merchandise;
+import CheckResult.person.Customer;
+import CheckResult.supermarket.LittleSuperMarket;
+import CheckResult.supermarket.Merchandise;
 
 import java.util.Scanner;
 
@@ -18,16 +18,13 @@ public class RunLittleSupperMarketAppMain {
         //创建一个熟数组引用，和 littleSuperMarket.merchandises 指向同一个数组对象
         Merchandise[] all = littleSuperMarket.merchandises;
 
-        //遍历并给所有商品赋值
         for (int i = 0; i < all.length; i++) {
             Merchandise m = new Merchandise();
-            //创建商品属性
             m.count = 200;
             m.id = "Id" + i;
             m.name = "商品" + i;
             m.purchasePrice = Math.random() * 200;
             m.soldPrice = (1 + Math.random()) * 200;
-            //用创建的商品，给商品数组的第i个引用赋值， all 和小超市的商品数组引用指向的是同一个对象
             all[i] = m;
         }
 

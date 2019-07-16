@@ -1,4 +1,4 @@
-package Exercise.Transfer;
+package CheckResult.Transfer;
 
 public class PeopleTexst {
     public static void main(String[] args) {

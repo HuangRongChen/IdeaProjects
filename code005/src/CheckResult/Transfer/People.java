@@ -1,4 +1,4 @@
-package Exercise.Transfer;
+package CheckResult.Transfer;
 
 public class People {
 
